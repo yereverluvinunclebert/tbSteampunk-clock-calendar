@@ -251,7 +251,6 @@ One of the preference screens for this utility.
   	CCRSlider.ocx
  	TwinBasic Common Controls Compatibility Package 
    
- ![references](https://github.com/user-attachments/assets/de65d3d1-6519-4f4c-a5f8-1715ad422dde)
 
  LICENCE AGREEMENTS:
  
