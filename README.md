@@ -14,6 +14,17 @@ My current TwinBasic/RC6 PSD program being worked upon now, in progress, don't d
 	* Demonstrates how to put a transparent form on your desktop using TwinBasic.
 
 When finished, this Steampunk Clock Calendar widget will be an attractive steampunk widget for your desktop. It is a deliberately-complex clock with a skeumorphic interface. Functional but gorgeous at the same time. This VB6/TwinBasic Widget is a moveable widget that you can move anywhere around the desktop as you require. The design is based upon the Yahoo widget of the same design which I also designed. This is its replacement.
+
+TwinBASIC bugs:
+
+There are a few bugs specific to TwinBasic that need to be rectified by Wayne Phillips in TwinBasic itself, that directly affect the Steampunk Clock/calendar.
+
+	* BorderStyle value on Frames seems to be switched in compiled operation. https://github.com/twinbasic/twinbasic/issues/1970	
+ 	* Image JPGs loaded from RC collection upside down https://github.com/twinbasic/twinbasic/issues/1939
+ 	* Image control - mouseUp event not activated when the control is made invisible https://github.com/twinbasic/twinbasic/issues/1938
+   	* TwinBasic is slower than VB6 when populating ComboBox controls https://github.com/twinbasic/twinbasic/issues/1968
+
+These bugs will no doubt be fixed before TwinBasic leaves Beta. They are just worth mentioning.
  
 If you just want to install it on your desktop, there will be a setup.exe that you download and run. If you want to compile this yourself, clone/download the lot. You will of course, need the TwinBasic IDE to make changes which is downloadable and available for free. If you have VB6 already installed then you can use that, of course.
 
