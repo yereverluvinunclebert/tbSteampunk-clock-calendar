@@ -1,0 +1,289 @@
+Tasks Complete:
+=================
+
+dealing with increased density shadows, the simple PSD parser function seems to increase to opacity of shadows in the transparent regions. Sent PSD to Olaf - done
+
+help image cut off - done
+help pin added - done
+mute button balloon text - done
+mute button code - done
+about us PNG updated - done
+mute button on startup - done
+add percentage in text - done
+sliderset - constrain within current Y axis - done
+sliderset - constrain within bounds left/right - done
+stretch the cable to match the sliderset - done
+slider in relation to external sound changes - done
+add frequent timer to detect change to system volume state and set button state automatically - done
+add keypress commands L/R U & D - done
+create HTML documentation - done
+create CHM documentation - done
+width of the help in low dpi mode - done
+removal of prefs positioning to top, bottom &c - done
+update html code documentation using MZTools code documenter  - done
+setup2go create setup.exe  - done
+Prefs scale altered from 5-100 - done
+fmrMessage unloaded - done
+startup - done
+
+add optional alarm variable for the day/month and year digital displays
+same for AM/PM
+add graphical sparkles
+
+msgbox to msgboxA
+
+on alarm toggle click - use the associated glbl alarm value and override the digital display
+weekday till toggle - not closing
+have separate solid red till backgrounds for transparent text overlays as per the YWE version of the widget - this should fix the mouseLeave bug where the red bit stays
+alarm 1 toggle popping up when background help disabled
+pendulum - convert the original js.
+add pendulum toggle control to the prefs
+quiet/loud sounds
+
+' resizing of main clock on multi-monitor systems with different sizes
+' resizing of preferences on multi-monitor systems with different sizes
+' test usage of RC6 for 2nd monitor awareness 
+
+' weekday till refresh at midnight
+
+' fix the slider cable
+
+' prefs, have a save size for each monitor encountered
+' subclass the scrollbar in the about window to allow it to be scrolled using the scrollwheel - not required, works already
+' add subclassing to allow the balloon tooltips to appear on all prefs comboboxes
+' added sleeptimer 
+' implement sleep timer refresh
+
+' fix recent control tooltips
+' startup crank handle
+' add method to feed messages to the screen 
+' screenwrite on all major controls
+' screenwrite on startup and alarms
+' clock, have a save size for each monitor encountered
+
+ add balloon tooltips to all prefs controls - abandoned  - Elroy's subclassing VB^6 comboboxes do not work alongside an RC form, tooltips will not appear, OK in firecall with no RC forms
+
+' HTML documentation WIP
+' create CHM
+' resize the prefs on startup
+
+' create an image array/list and populate that with the date/time images that need to be displayed,
+' always display the contents of that list on each paint event.
+
+' de-couple the routines that populate the digital clocks so we can run those on a separate timer
+' so that the code to determine the month year does not run on each and every PAINT event consuming unnecessary CPU 
+' remove the weekday timer when setting an alarm
+
+' test the various auto-resizing options
+' added trigger of digital clocks on awake from sleep
+
+' add 24hr clock check box in prefs, plus, storing/reading/validation &c
+' prevent spurious clicks on tills that have alpha of 0
+' alarm toggles indicate alarm state
+' screenwrite when awoken from sleep
+
+' digital counter animation from zero
+
+' when you click on A alarm toggle, it should not set to 01Jan 1970 as it needs to start at the current date/time to set the next alarm
+' click on alarm till deletes alarm with confirmation pop-up
+' if in alarm mode, when you delete the alarm it also cancels alarm mode, moving slider back in
+
+' subclassing comboboxes Elroy's subclasser
+' Added Olaf tooltips for the UI controls
+' tooltips for the prefs multi monitor combo
+
+' cancel an automatic resize after a wake from sleep, due to Windows sometimes pushing all windows onto one monitor, after a wake from sleep
+' Added Elroy's subclassing code to assist in capturing WM_MOVE and WM_MOVED.
+' Added subclassing to remaining prefs comboboxes to capture mouseOver and generate balloon tooltips
+' Add balloon tooltips to all comboboxes, vars and assignments
+' at mouseUP test current monitor using isPrimary instead of monitorIDs.
+
+' balloon tooltips font size - not possible unless I roll my own
+' all remaining controls, text, buttons,  chk boxes, scrollbars and image boxes to receive balloon tooltips - wip
+' general tab added balloon tooltips
+' windows tab added balloon tooltips
+' fonts tab added balloon tooltips
+' sounds tab added balloon tooltips
+' position tab added balloon tooltips
+' config tab added balloon tooltips
+' about tab added balloon tooltips
+
+' code to save, validate and restore prefs balloon tooltip config.
+' tooltips for recent controls, missing tooltips
+
+' digital display indicators, respect opacity
+' T toggle crank, hinges, respect opacity
+
+' prefs intercept WM_EXITSIZEMOVE WM_MOVED via subclassing
+' prefs auto resizing, fix since isPrimary
+' create a new subroutine that both the timer and mouseUP can call?
+
+' use the new wm_moved to call the resizing on the form on mouseUP.
+
+' fix prefs show when minimised
+' help dropdown 1,2 & 3
+
+' change the check boxes that control tooltips to radio buttons
+' add 12/24hr code in overlay 
+
+' text screenWrite alternative method - have one text widget and fill that - it will fit behind the weekday and alarm tills, whereas the text form has to be 'lifted' above 
+' investigate use of alpha img instead when creating the cwlabel widget - not relevant
+' the handwritten font text incorrect on the help dropdowns
+
+' add zOrder divination to the console text label holder
+' add inIDE call to prevent unexpected IDE crash caused by the addition of the cwLabel
+
+' add a font configuration fields to the prefs for the console text size and font
+' add balloon and standard tooltips to the console font configuration controls
+
+' updated about text
+' removed dead files and references
+' Added MP3 sound files for later conversion
+' Added time machine images
+' changes to the about text
+
+' add global vars for storing the console text vars, read/write/vaidate &c
+' add github home
+' add github menu option
+' convert all mp3 to .wav
+' added chiming for all the 1/4 hrs
+' add chiming for the hour using shortened bell toll 1.5s
+' clapper enabled in adjustControls
+
+' added alarms for all five toggles
+' update HTML code for all recent changes
+' reducing cpu overhead of testing for alarms
+' removed redundant code
+
+' add new globals for the date + times combined and set them elsewhere to reduce the overhead on each second sweep  
+' 1.75s length chime bell
+' longer final chime with revurb
+' fixed the tab order on the general page for the alarm fields
+
+' time validity check not working
+
+' fontDialog - corrected default font from centurion to last opened
+' add code to support the setting of the font characteristics for the console display - wip
+' when user changes prefs font in high DPI mode, a quick resize is required to obtain the new resized font again.
+' width/height of messageboxA, stored after resize
+
+' replace cwlabel with another RC control and re-test too see if it crashes - it does
+' not always showing the currently used font for the screen display
+' centre the clock hands more accurately, remove the hole and see what it is doing
+' not writing the wake after sleep to the screen display
+
+' fix IDE crash with creating label widget- forum post raised
+' add a sound to the clockset dblclick
+
+' add the date/time picker FOSS code to the prefs - abandoned ucJLDatePicker, strange errors and no instructions
+' number of writeable lines in the label widget according to the font size to ensure the text appears on screen - not required
+
+' separate the date into three separate boxes, perhaps a dropdown for each and validation - wip
+' add three separate boxes for alarm 1- wip
+' add code to fill the date and month with values for alarm 1- wip
+' add code to fill the date and month with values for alarm 1- wip
+' add balloon tooltips for day and month for alarm 1- wip
+
+' separate the time into two fields and add validation
+
+' courier new problem
+' set the display console font to the chosen font in the font field
+' standard tooltips for the alarm combo boxes
+' bottom of the form has been truncated slightly
+' won't ring one o'clcck AM
+
+' dbl clicking on the screen causes a CR
+' mute button not toggling out after a press in and reload
+
+' DPI switch off and back on loses high DPI size, document, no change.
+' preferences get focus when behind and visible
+' why is the RC5 prefs drag and resize so much smoother than the RC6 version? because it auto-resizes the top icons on each and every resize
+
+' switch off all function menu option to stop all timers
+' switch on all function menu option to restart all timers
+' enable all controls to avoid mouse events when set in the prefs Window tab - clock still operates
+
+' get the sound working on the old Konfab. widget
+
+' tooltip changes
+' countdown fix
+
+
+' -oOo-
+
+Tasks to do:
+============
+
+' slider advancing/retarding time using timeShiftPercent modified not quite exponentially to shift time - wip
+' in the timer, take the value of timeShiftPercent and do what to it, use logarithm to calculate the value on a curve.
+' convert the .js code to do the same.
+
+' create a property in cwOverlay and pass the time deviation to it.
+
+' combine a new counter rotating sound recording the current Konfabulator widget.
+
+' keypresses when clock has focus
+
+' does time reset after a sleep? - test
+
+' when in alarm mode, the analogue clock fails to display the time as stated on the alarm shown
+
+' .VAlign on the label? not working, raised as a bug with Olaf? 0=Top, -1 and 1=Middle
+
+   right and left keys when the alarm is raised, control the slider
+
+' after a digital reset set each to -- --  and ** *** **** one by one - wip
+'      possibly do the hrs, mins, days, month and years separately
+
+' add time machine functionality
+
+' investigate the accumulating shadow when moving across the transparent surface of the screen
+
+' shadow behind cwlabel background when background screen lowered, 1. try adding a refresh, 2, try another control
+
+' find and replace globals within classes with property GET/SETs
+
+' look at Olaf's pendulum code
+
+' Create a XP /ReactOS version using old APIs and RC5 - no DPI awareness, as XP does not have the API nor the capability.
+
+https://www.vbforums.com/showthread.php?896944-VB6-QUESTION-Check-if-API-exists
+
+' obtain a XP test system - wip
+
+' sync. E6410 win 7 and test - wip
+' sync. Fast Dell laptop
+
+' test on Dell win 11 high DPI with slicence =
+
+' Form.CenterOn New_c.Displays(1) - test whether this required on a first time install.
+
+' adjustFormPositionToCorrectMonitor, make it work and observe the result as per FCW - wip
+' adjustFormPositionToCorrectMonitor - licence form
+' adjustFormPositionToCorrectMonitor - about form
+' adjustFormPositionToCorrectMonitor - help form
+
+' identify the resizing code changes/additions for multi monitor systems so the code can be back-ported to older VB6 widgets
+
+' reduce CPU usage to less than one percent
+
+'  create setup.exe with a different name.
+
+' -oOo-
+
+' Later tasks after testing
+
+' test the icon sizes on 32bit Win7, XP and ReactOS, find out if 48x48 causes a crash
+' 32x32 (24 bit)
+' 16x16 (24 bit)
+' 48x48 (32 bit)
+' 32x32 (32 bit)
+' 16x16 (32 bit)
+
+' patch a 256 bit icon into the VB6 binary
+' https://www.vbforums.com/showthread.php?858347-RESOLVED-How-to-create-and-connect-quality-icon-group-to-your-VB6-app
+
+' recreate the clock using 
+
+subclass the font dialog to center it on screen using lpfhook?
+
