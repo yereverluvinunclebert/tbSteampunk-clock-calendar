@@ -26,7 +26,7 @@ There are a few bugs specific to TwinBasic that need to be rectified by Wayne Ph
 
 These bugs will no doubt be fixed before TwinBasic leaves Beta. They are just worth mentioning.
  
-If you just want to install it on your desktop, there will be a setup.exe that you download and run. If you want to compile this yourself, clone/download the lot. You will of course, need the TwinBasic IDE to make changes which is downloadable and available for free. If you have VB6 already installed then you can use that, of course.
+If you just want to install the Steampunk Clock Calendar on your desktop, there will be a setup.exe in the release section that you download and run. If you want to compile this yourself, clone/download the lot. You will of course, need the TwinBasic IDE to make changes which is downloadable and available for free. If you have VB6 already installed then you can use that, of course.
 
  Why TwinBasic? Well, with a 64 bit, modern-language upgrade improvement being delivered now, in the form of "100% compatible" TwinBasic, coupled with support for transparent PNGs via RC/Cairo, TwinBasic native code has an  amazing future. 
 
