@@ -1,6 +1,6 @@
-# Steampunk Clock Calendar-VB6
+# Steampunk Clock Calendar-TwinBasic
  
-A FOSS Desktop Utility VB6 WoW64 Widget for Windows XP, ReactOS, Vista, Win7, 8 and 10/11+.
+A FOSS Desktop Utility TwinBasic WoW64 Widget for Windows XP, ReactOS, Vista, Win7, 8 and 10/11+.
 
 My current VB6/TwinBasic/RC6 PSD program being worked upon now, in progress, don't download it yet expecting it to work in all respects, as it is far from complete. Estimated at 99% graphically complete but only 82% code-complete. I am always adding in new functionality as this is an educational project for me. What does the program do already in its unfinished state?
 
@@ -17,7 +17,7 @@ When finished, this Steampunk Clock Calendar widget will be an attractive steamp
  
 If you just want to install it on your desktop, there will be a setup.exe that you download and run. If you want to compile this yourself, clone/download the lot. You will of course, need the TwinBasic IDE to make changes which is downloadable and available for free. If you have VB6 already installed then you can use that, of course.
 
- Why VB6? Well, with a 64 bit, modern-language upgrade improvement being delivered now, in the form of "100% compatible" TwinBasic, coupled with support for transparent PNGs via RC/Cairo, VB6 native code has an amazing future. 
+ Why TwinBasic? Well, with a 64 bit, modern-language upgrade improvement being delivered now, in the form of "100% compatible" TwinBasic, coupled with support for transparent PNGs via RC/Cairo, VB6 native code has an amazing future. 
 
  ![vb6-logo-200](https://github.com/yereverluvinunclebert/Panzer-JustClock-VB6/assets/2788342/7986e544-0b94-4a10-90bb-2d9fb60c294a)
  
@@ -129,7 +129,7 @@ At the back-end there are more preferences that may be changed, all are document
 
  BUILD: The program runs without any Microsoft plugins.
  
- Built using: VB6 with MZ-TOOLS 3.0, VBAdvance, CodeHelp Core IDE Extender
+ Built using: TwinBasic with MZ-TOOLS 3.0, VBAdvance, CodeHelp Core IDE Extender
  Framework 2.2, Shaggratt's Code Map, Rubberduck 2.4.1, RichClient 6 or, 
  
  TwinBasic and RichClient 6
