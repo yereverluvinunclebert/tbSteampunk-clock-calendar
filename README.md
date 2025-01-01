@@ -2,7 +2,7 @@
  
 A FOSS Desktop Utility TwinBasic WoW64 Widget for Windows XP, ReactOS, Vista, Win7, 8 and 10/11+.
 
-My current TwinBasic/RC6 PSD program being worked upon now, in progress, you can download it but do expect some functionality to be incomplete and unpolished, especially as it is using a Beta-grade Compiler (TwinBasic). Estimated at 99% graphically complete, 90% functionally complete but only 78% code-complete. I am always adding in new functionality as this is an educational project for me, there are code improcements to be made, alternative methods found &c.
+My current TwinBasic/RC6 PSD program being worked upon now, in progress, you can download it but do expect some functionality to be incomplete and unpolished, especially as it is using a Beta-grade Compiler (TwinBasic). Estimated at 99% graphically complete, 90% functionally complete but only 78% code-complete. I am always adding in new functionality as this is an educational project for me, there are code improvements to be made, alternative methods found &c.
 
 What does the program do already in its unfinished state?
 
