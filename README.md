@@ -2,7 +2,7 @@
  
 A FOSS Desktop Utility TwinBasic WoW64 Widget for Windows XP, ReactOS, Vista, Win7, 8 and 10/11+.
 
-My current TwinBasic/RC6 PSD program being worked upon now, in progress, you can download it but do expect some functionality to be incomplete and unpolished, especially as it is using a Beta-grade Compiler (TwinBasic). Estimated at 99% graphically complete, 90% functionally complete but only 78% code-complete. I am always adding in new functionality as this is an educational project for me, there are code improvements to be made, alternative methods found &c.
+My current TwinBasic/RC6 PSD program being worked upon now, in progress, you can download it but do expect some functionality to be incomplete and unpolished, especially as it is using a Beta-grade Compiler (TwinBasic). Estimated at 99% graphically complete, 92% functionally complete but only 79% code-complete, mostly due to some TwinBasic workarounds needing to be fixed properly. I am always adding in new functionality as this is an educational project for me, there are code improvements to be made, alternative more efficient methods found &c.
 
 What does the program do already in its unfinished state?
 
@@ -10,6 +10,7 @@ What does the program do already in its unfinished state?
 	* Has up to five working alarms. 
 	* All the steampunk controls working and functioning as designed, responds to keyboard and mouse events.
  	* The time slider now advances time using a logarthmic scale.
+ 	* Alarms can be set via the time slider.  
 	* Has a fully functioning preference utility.
 	* Has full documentation and help.
 	* Demonstrates the use of TwinBasic and Cairo Graphics working together.
