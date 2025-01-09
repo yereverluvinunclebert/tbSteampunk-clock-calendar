@@ -2,7 +2,7 @@ STEAMPUNK CLOCK CALENDAR DESKTOP WIDGET
 
 The Steampunk Clock Calendar is a clock/calendar/alarm utility via a steampunk design on your desktop. It can be resized and placed anywhere on your desktop. It uses minimal resources and helps give your desktop a dieselpunk make-over.
 
-This VB6 version of the Steampunk Clock Calendar replaces the Yahoo/Konfabulator Widget version that is now obsolete.
+This TwinBasic version of the Steampunk Clock Calendar replaces the VB6 version that is now being superceded.
 
 This widgets UI functionality is 'complex' as I am using my complex template for this widget and widgets yet to come, it allows the user to interact with the graphical elements of the widget.
 
@@ -10,9 +10,9 @@ It can be increased in size, opacity/transparency may be set as to the users dis
 
 Right-click on the widget to display the function menu, mouse hover over the widget and press CTRL+mousewheel up/down to resize. It works well on Windows Vista, Win7/8/10 to Windows 11 as well as Linux and Mac os x using Wine. There will also be a separate version for Windows XP and ReactOS without high DPI awareness.
 
-This version was initially developed on Windows 7/10 using 32 bit VisualBasic 6 as a FOSS project creating a WoW64 widget for the desktop.
+This version was initially developed on Windows 7/10 using 32 bit VisualBasic 6 as a FOSS project creating a WoW64 widget for the desktop. It has been converted, almost seamlessly to TwinBasic.
 
-It is open source to allow easy configuration, bug-fixing, enhancement and community contribution towards free-and-useful VB6 utilities that can be created by anyone. The first step was the creation of a template program to form the basis for the conversion of several desktop utilities or 'widgets'. This program is one of them. A future step is new VB6 widgets with more functionality and then hopefully, conversion of each to RADBasic/TwinBasic for future-proofing and 64bit-ness.
+It is open source to allow easy configuration, bug-fixing, enhancement and community contribution towards free-and-useful TwinBasic utilities that can be created by anyone. The first step was the creation of a template program to form the basis for the conversion of several desktop utilities or 'widgets'. This program is one of them. A future step is converting each of my VB6 desktop widgets to TwinBasic and then hopefully, conversion of each to 64bit-ness for future-proofing.
 
 This utility is one of a set of steampunk and dieselpunk widgets that you can find here on Deviantart: https://www.deviantart.com/yereverluvinuncleber/gallery
 
@@ -25,7 +25,7 @@ widgets that can replace certain system functions. Windows is shipped with a par
 
 The Pendulum is switched off by default, there is a good reason for this:
 
-The graphics of a swinging pendulum in VB6 requires processor power. All the graphics here are CPU-powered, using Cairo, we have no access to the GPU. Some older single core or older
+The graphics of a swinging pendulum in TwinBasic requires processor power. All the graphics here are CPU-powered, using Cairo, we have no access to the GPU. Some older single core or older
 dual core machines may take exception to the pendulum and cause the use of a lot of cpu. The pendulum is pure math so it could be a shortcoming in this area, I intend to address this. 
 
 If you have any problems please post your email queries to:
@@ -97,7 +97,7 @@ I have really tried to maintain the credits as the project has progressed. If I 
 
 MicroSoft in the 90s - MS built good, lean and useful tools in the late 90s/early 2000s. Thanks MicroSoft for VB6.
 
-Olaf Schmidt    - This tool was built using the RichClient RC6 Cairo wrapper for VB6. Specifically, the components using transparency. Thanks for the massive effort Olaf in creating Cairo counterparts for all VB6 native controls and giving us access to advanced features on controls such as transparency.
+Olaf Schmidt    - This tool was built using the RichClient RC6 Cairo wrapper for VB6/TwinBasic. Specifically, the components using transparency. Thanks for the massive effort Olaf in creating Cairo counterparts for all VB6 native controls and giving us access to advanced features on controls such as transparency.
 
 Shuja Ali @ codeguru for his settings.ini code.
 
